@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class WebScreenLayout extends StatelessWidget {
-  const WebScreenLayout({Key? key}) : super(key: key);
+class MobileScreenLayout extends StatelessWidget {
+  const MobileScreenLayout({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('Web'),
+        child: Text('Android'),
       ),
     );
   }
