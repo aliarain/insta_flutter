@@ -5,6 +5,7 @@ import 'package:insta_flutter/responsive/responsive_screen_layout.dart';
 import 'package:insta_flutter/responsive/web_screen_layout.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
 }
