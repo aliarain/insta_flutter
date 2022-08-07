@@ -4,6 +4,7 @@ import 'package:insta_flutter/responsive/mobile_screen_layout.dart';
 import 'package:insta_flutter/responsive/responsive_screen_layout.dart';
 import 'package:insta_flutter/responsive/web_screen_layout.dart';
 import 'package:insta_flutter/screens/login_screen.dart';
+import 'package:insta_flutter/screens/signup_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,9 +19,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Instagram Flutter',
       theme: ThemeData.dark(),
-      home: const LoginScreen(),
+      home: SignupScreen(),
       //const ResponsiveScreenLayout(
       //     webScreenLayout: WebScreenLayout(),
       //     mobileScreenLayout: MobileScreenLayout()),
